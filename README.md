@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Crypto checkout without the need of wallet connection
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Title: Flow Payment
+Problem -> Idea -> Key Features -> Presentation -> Vision
++ Nike Example
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Problem
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Purchases in web3 usually involves the website asking the user to sign in with to their wallet. This is unpractical and unsafe for the average user as many websites could be phishing sites and clones. _It's like connecting your entire bank account to every website you visit, it's impractical._
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+One click on an unsafe website = money drained 😢
 
-## Learn More
+## Idea: Make a stripe like solution but with a twist & use of crypto wallets
 
-To learn more about Next.js, take a look at the following resources:
+ For example, buying shoes on Nike.com
+1. User goes to checkout to purchase a pair of [Nike Dunks](https://www.nike.com/w/dunk-shoes-90aohzy7ok)
+2. Chooses to pay with Solana -> a "payment wallet" gets generates 
+3. User copies wallet address and the required amount
+    - Business has access to generated wallet & receives the money
+    - User paid for their Dunks without connecting to the Nike.com
+    - End: both sides feels secure ✅
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Demo (1:31-3:02): [https://youtu.be/-pIrekGPW4w](https://youtu.be/-pIrekGPW4w) 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Key Feature ^^
+User can use Phantom, Solflare, Backpack, any Solana wallet and send USDC or SOL to the generated public address, and confirm their payment without ever needing to connect their wallet to the website
 
-## Deploy on Vercel
+## Presentation
+- [https://youtu.be/-pIrekGPW4w](https://youtu.be/-pIrekGPW4w)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Future
+- Fix features for Colosseum hackathon
+- Mentor from builders in the ecosystem
+- Work with web2 companies to get it integrated on their website
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Thank you for reading & watching!
